@@ -1,0 +1,28 @@
+* {
+  transition: .2s;
+}
+body{
+  background: #e8fff9;
+  color: black;
+  font-family: raleway;
+}
+.mast {
+  background-color: rgba(24,146,147,1);
+  width: 100%;
+  margin: 0;
+}
+.menu-glyph {
+  font-size: 2em;
+  margin-top: -1em;
+}
+
+
+
+
+@media (min-width: 1000px){
+  body {
+     background-image: url(../assets/tile.png);
+     color: white;
+  }
+
+}
