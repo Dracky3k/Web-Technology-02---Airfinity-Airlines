@@ -17,7 +17,6 @@
     font-weight: bold;
     font-style: normal;
 }
-
 html {
   margin:0;
   padding:0;
@@ -38,8 +37,16 @@ body{
   font-family: raleway;
   font-weight: normal;
 }
+hr {
+  outline-color: #189293;
+  outline-width: 2px;
+}
 .vert_bot{
   padding-top: 3em;
+}
+.vert-mid{
+  vertical-align: middle;
+  margin-top:-0.5em;
 }
 .spacer{
   margin-top: 3em;
@@ -105,6 +112,42 @@ body{
 }
 .input_round{
   border-radius: 25px;
+}
+.flyer_points{
+  background-color: #189293;
+  height:15em;
+  text-align: center;
+
+}
+.flyer_points h4 {
+  color: #fff;
+  padding-top:3em;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.rewards_table {
+  border: 1px solid #189293;
+}
+.rewards_even{
+  background: #189293;
+  color:#fff;
+   
+}
+.rewards_odd{
+
+}
+.blog_thumb{
+  
+  padding-top: 1.5em;
+  
+}
+.blog_img{
+  margin-top: 1.5em;
+}
+.blog_button {
+  background-color: #b6f2f0;
+  border-radius: 5px;
 }
 
 
