@@ -1,55 +1,66 @@
-@font-face {
-    font-family: 'raleway';
-    src: url('../fonts/webfont/raleway-regular-webfont.eot');
-    src: url('../fonts/webfont/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/webfont/raleway-regular-webfont.woff') format('woff'),
-         url('../fonts/webfont/raleway-regular-webfont.ttf') format('truetype'),
-         url('../fonts/webfont/raleway-regular-webfont.svg#ralewayregular') format('svg');
-    font-weight: normal;
-    font-style: normal;}
-@font-face {
-    font-family: 'raleway';
-    src: url('../fonts/webfont/raleway-extrabold-webfont.eot');
-    src: url('../fonts/webfont/raleway-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/webfont/raleway-extrabold-webfont.woff') format('woff'),
-         url('../fonts/webfont/raleway-extrabold-webfont.ttf') format('truetype'),
-         url('../fonts/webfont/raleway-extrabold-webfont.svg#ralewayextrabold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-}
-html {
-  margin:0;
-  padding:0;
+/*****************
+      Import
+******************/
+@font-face {font-family: 'raleway';src: url('../fonts/webfont/raleway-regular-webfont.eot');src: url('../fonts/webfont/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),url('../fonts/webfont/raleway-regular-webfont.woff') format('woff'),url('../fonts/webfont/raleway-regular-webfont.ttf') format('truetype'),url('../fonts/webfont/raleway-regular-webfont.svg#ralewayregular') format('svg');font-weight: normal;font-style: normal;}
+@font-face {font-family: 'raleway'; src: url('../fonts/webfont/raleway-extrabold-webfont.eot');src: url('../fonts/webfont/raleway-extrabold-webfont.eot?#iefix') format('embedded-opentype'),url('../fonts/webfont/raleway-extrabold-webfont.woff') format('woff'),url('../fonts/webfont/raleway-extrabold-webfont.ttf') format('truetype'),url('../fonts/webfont/raleway-extrabold-webfont.svg#ralewayextrabold') format('svg');font-weight: bold;font-style: normal;}
 
-}
-h2 {
-  text-align: right;
-  font-weight: bold;
-  font-size: 3em;
-}
-p {
-  padding-top: 1em;
-  padding-bottom: 0.3em;
-}
+html {margin:0;padding:0;}
+
+h2 {text-align: right;font-weight: bold;font-size: 3em;}
+
+p {padding-top: 1em;padding-bottom: 0.3em;}
+
 body{
   background: #e8fff9;
+  background-image: url(../assets/tile.png);
   color: #189293;
   font-family: raleway;
   font-weight: normal;
 }
+
 hr {
   outline-color: #189293;
   outline-width: 2px;
 }
+header {
+  font-size: 2em;
+  font-weight: bold;
+}
+.sm-menu{
+  color:#fff;
+  font-weight: normal;
+  font-size: 1.2em;
+  text-align: center;
+  padding:1em;
+}
+.md-menu{
+  padding :2em;
+
+}
+
+.sm-menu-active{
+  background-color: #b6f2f0;
+  font-weight: normal;
+  font-weight: bold;
+  color:#189293;
+}
+
+.deco_none a{
+  text-decoration: none;
+  color: inherit;
+}
 .vert_bot{
   padding-top: 3em;
+  margin-top: 3em;
 }
 .vert-mid{
   vertical-align: middle;
   margin-top:-0.5em;
 }
 .spacer{
-  margin-top: 3em;
+  margin-top: 1.5em;
+  padding-top:1.5em;
+  content: " ";
 }
 .spacerHalf{
   margin-top:1.5em;
@@ -66,7 +77,31 @@ hr {
   width: 110%;
   height: auto;
   margin-bottom: 0;
+  padding-bottom: 0.8em;
+  padding-top: 1em;
+  
  
+}
+.no_pad{
+  padding-left: 0;
+  padding-right: 0;
+}
+.mast-md{
+  background-color: rgba(24,146,147,1);
+
+
+}
+.logo-ipad{
+  padding:3em;
+  padding-top: 1px;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+.logo-md{
+  padding:3em;
+  padding-top: 1px;
+  margin-top: 1em;
+  margin-bottom: 2em;
 }
 .menu-glyph {
   font-size: 2em;
@@ -138,7 +173,7 @@ hr {
 
 }
 .blog_thumb{
-  
+  font-size: 0.8em;
   padding-top: 1.5em;
   
 }
@@ -148,13 +183,8 @@ hr {
 .blog_button {
   background-color: #b6f2f0;
   border-radius: 5px;
+
 }
-
-
-@media (min-width: 1000px){
-  body {
-     background-image: url(../assets/tile.png);
-     color: #189293;
-  }
-
+.large_text{
+  font-size: 1.5em;
 }

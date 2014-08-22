@@ -18,25 +18,52 @@
   <body>
     <!-- Main header + Nav Toggle -->
     <nav class="navbar" role="navigation">
-      <div class="container-fluid">
-      <!-- Logo for ipad -->
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-12 visible-sm">
-            <a class="logo navbar-brand" href="#"><img src="assets/logo-dark.svg" alt="Airfinity Airlines" role="logo" width="250px" height="50px"></a>
+      <div class="container-fluid no_pad">
+      <!-- Menu for Desktop -->
+        <div class="mast-md navbar visible-lg visible-md">
+          <a class="logo logo-md navbar-brand" href="#"><img src="assets/logo.svg" alt="Airfinity Airlines" height="70px"  class="" role="logo" ></a>
+          <div class=" col-md-8 col-md-push-3 deco_none sm-menu">
+            <a href="booking.html"><div class="col-md-2"><p>Booking</p></div></a>
+            <a href="blog.html"><div class="col-md-2"><p>Travel Blog</p></div></a>
+            <a href="flyer.html"><div class="col-md-2"><p>Frequent Flyer</p></div></a>
+            <a href="pledge.html"><div class="col-md-2"><p>Our Pledge</p></div></a>
+          </div>
+        </div>
+      <!--Menu for ipad -->
+        <div class="row visible-sm ">
+          <div class="col-sm-5 col-sm-push-3">
+            <a class="logo logo-ipad navbar-brand" href="#"><img src="assets/logo-dark.svg" alt="Airfinity Airlines"  class="text-center" role="logo" ></a>
+          </div> 
+        </div>
+        <div class="row col-sm-12 mast visible-sm">
+          <div class="col-sm-3">
+            <a href="booking.html"><p class="sm-menu">Booking</p></a>
+          </div>
+          <div class="col-sm-3">
+            <a href="blog.html"><p class="sm-menu">Travel Blog</p></a>
+          </div>
+          <div class="col-sm-3">
+            <a href="flyer.html"><p class="sm-menu">Frequent Flyer</p></a>
+          </div>
+          <div class="col-sm-3">
+            <a href="pledge.html"><p class="sm-menu">Our Pledge</p></a>
           </div>
         </div>
       </div>
-        <div class="navbar-header mast">
+      <!-- Menu for Mobile -->
+      <div class="navbar-header mast visible-xs">
           <div class="row">
             <a class="logo navbar-brand" href="#"><img src="assets/logo.svg" alt="Airfinity Airlines" role="logo" width="250px" height="50px" class="navbar-left col-xs-10 hidden-sm"></a>
-            <button type="button" class="navbar-toggle menu-glyph navbar-right col-xs-2" data-toggle="collapse" data-target="#main-menu">
+            <button type="button" class="navbar-toggle menu-glyph navbar-right col-xs-4" data-toggle="collapse" data-target="#main-menu">
               <span class="glyphicon glyphicon-th-list menu"></span>
             </button>
 
           </div>
         </div>
       </div>
+      
+       
+      
     </nav>
     <!-- Navigation Options -->
     <div class="collapse navbar-collapse" id="main-menu">

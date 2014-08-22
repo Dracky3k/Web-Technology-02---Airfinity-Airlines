@@ -17,21 +17,47 @@
   </head>
   <body>
     <!-- Main header + Nav Toggle -->
-    <nav class="navbar" role="navigation">
-      <div class="container-fluid">
-      <!-- Logo for ipad -->
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-12 visible-sm">
-            <a class="logo navbar-brand" href="#"><img src="assets/logo-dark.svg" alt="Airfinity Airlines" role="logo" width="250px" height="50px"></a>
+    <nav class="" role="navigation">
+      <div class="container-fluid no_pad">
+      <!-- Menu for Desktop -->
+        <div class="mast-md navbar visible-lg visible-md">
+          <a class="logo logo-md navbar-brand" href="index.html"><img src="assets/logo.svg" alt="Airfinity Airlines" height="70px"  class="" role="logo" ></a>
+          <div class="row">
+            <div class="col-md-6 col-md-push-3 deco_none sm-menu">
+              <a href="booking.html"><div class="col-md-2"><p>Booking</p></div></a>
+              <a href="blog.html"><div class="col-md-2 sm-menu-active"><p>Travel Blog</p></div></a>
+              <a href="flyer.html"><div class="col-md-2 "><p>Frequent Flyer</p></div></a>
+              <a href="pledge.html"><div class="col-md-2"><p>Our Pledge</p></div></a>
+            </div>
+          </div>
+        </div>
+      <!--Menu for ipad -->
+        <div class="row visible-sm ">
+          <div class="col-sm-5 col-sm-push-3">
+            <a class="logo logo-ipad navbar-brand" href="index.html"><img src="assets/logo-dark.svg" alt="Airfinity Airlines"  class="text-center" role="logo" ></a>
+          </div> 
+        </div>
+        <div class="row col-sm-12 mast visible-sm">
+          <div class="col-sm-3">
+            <a href="booking.html"><p class="sm-menu">Booking</p></a>
+          </div>
+          <div class="col-sm-3">
+            <a href="blog.html"><p class="sm-menu sm-menu-active">Travel Blog</p></a>
+          </div>
+          <div class="col-sm-3">
+            <a href="flyer.html"><p class="sm-menu">Frequent Flyer</p></a>
+          </div>
+          <div class="col-sm-3">
+            <a href="pledge.html"><p class="sm-menu">Our Pledge</p></a>
           </div>
         </div>
       </div>
-        <div class="navbar-header mast">
+      <!-- Menu for Mobile -->
+      <div class="navbar-header mast visible-xs">
           <div class="row">
             <a class="logo navbar-brand" href="index.html"><img src="assets/logo.svg" alt="Airfinity Airlines" role="logo" width="250px" height="50px" class="navbar-left col-xs-10 hidden-sm"></a>
-            <button type="button" class="navbar-toggle menu-glyph navbar-right col-xs-2" data-toggle="collapse" data-target="#main-menu">
-              <span class="glyphicon glyphicon-th-list "></span>
+            <button type="button" class="navbar-toggle menu-glyph navbar-right col-xs-4" data-toggle="collapse" data-target="#main-menu">
+              <span class="glyphicon glyphicon-th-list menu"></span>
             </button>
 
           </div>
@@ -41,8 +67,33 @@
     <!-- Navigation Options -->
     <div class="collapse navbar-collapse" id="main-menu">
       <ul class="navbar-nav nav navbar-right drop-menu hidden-sm hidden-md hidden-lg">
+        <li>
+          <div class="no_pad container-fluid">
+          <div class="row">
+            <div id="carousel-index" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="item">
+                  <img class="img-responsive" width="100%" src="assets/slider/4.jpg" alt="slider1">
+                <div class="carousel-caption">
+                </div>
+              </div>
+              <div class="item">
+                <img class="img-responsive" width="100%" src="assets/slider/5.jpg" alt="slider2">
+                <div class="carousel-caption">
+                </div>
+              </div>  
+              <div class="item active">
+                <img class="img-responsive" width="100%" src="assets/slider/6.jpg" alt="slider3">
+                <div class="carousel-caption">
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+        </li>
         <li class=""><div class="drop-menu1"><a href="booking.html">Booking</a></div></li>
-        <li class=""><div class="drop-menu2 drop-menu-active"><a href="#">Travel Blog</a></div></li>
+        <li class=""><div class="drop-menu2 drop-menu-active"><a href="blog.html">Travel Blog</a></div></li>
         <li class=""><div class="drop-menu3"><a href="flyer.html">Frequent Flyer</a></div></li>
         <li class=""><div class="drop-menu4"><a href="pledge.html">Our Pledge</a></div></li>
       </ul>
@@ -50,15 +101,16 @@
     <h1 class="text-center bold">Travel Blog For Years</h1>
     <div class="spacer"></div>
     <!-- Mobile blog posts here -->
-    <div class="container visible-xs">
+    <div class="container-fluid visible-xs">
       <div class="row">
         <div class="col-xs-12">
           <button type="button" class="btn btn-lg btn-block blog_button" data-toggle="collapse" data-target="#blog-post1">
             <!-- Blog post Pic -->
-            <div class="col-xs-6 col-xs-pull-1 blog_img">
+            <div class="col-xs-6 blog_img">
               <img class="img-rounded img-responsive" src="assets/blog1.jpg">
             </div>
-            <div class="col-xs-6 col-xs-pull-2">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-4 col-xs-pull-2">
               <p class="blog_thumb">
                 <span class="bold">Etsy keytar <br>stumptown</span><br> 
                  Shoreditch, a bird on <br>it organic fingerstache <br>shabby chic 
@@ -91,10 +143,11 @@
           <!-- Blog Post1 end -->
            <button type="button" class="btn btn-lg btn-block blog_button" data-toggle="collapse" data-target="#blog-post2">
             <!-- Blog post Pic -->
-            <div class="col-xs-6 col-xs-pull-1 blog_img">
+            <div class="col-xs-6 blog_img">
               <img class="img-rounded img-responsive" src="assets/blog2.jpg">
             </div>
-            <div class="col-xs-6 col-xs-pull-2">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-4 col-xs-pull-2">
               <p class="blog_thumb">
                 <span class="bold">Etsy keytar <br>stumptown</span><br> 
                  Shoreditch, a bird on <br>it organic fingerstache <br>shabby chic 
@@ -127,10 +180,11 @@
           <!-- Blog Post2 end -->
            <button type="button" class="btn btn-lg btn-block blog_button" data-toggle="collapse" data-target="#blog-post3">
             <!-- Blog post Pic -->
-            <div class="col-xs-6 col-xs-pull-1 blog_img">
+            <div class="col-xs-6 blog_img">
               <img class="img-rounded img-responsive" src="assets/blog4.jpg">
             </div>
-            <div class="col-xs-6 col-xs-pull-2">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-4 col-xs-pull-2">
               <p class="blog_thumb">
                 <span class="bold">Lorem Ipsum<br>stumptown</span><br> 
                  Shoreditch, a bird on <br>it organic fingerstache <br>shabby chic 
@@ -164,6 +218,60 @@
           <div class="spacer"></div>
         </div>        
       </div>
+    </div>
+    <!-- Blog Posts for iPad/Desktop -->
+    <div class="container hidden-xs">
+      <div class="row">
+        <div class="col-sm-12 col-md-10 blog_button">
+          <header>Etsy keytar stumptown Shoreditch ugh.</header>
+          <div class="spacerHalf"></div>
+          <div class="col-sm-4">
+            <img class="img-responsive" src="assets/blog1.jpg" alt="">
+          </div>
+          <div class="col-sm-8">
+            <p>
+              But generally it feels a little slapdash furthermore we would recommend this phone if you wanted this sort of thing on if you want an Android phone, this might just be your best bet, above all might be better, for example makes compromises but better than some but not as good as others in my opinion just about the best.
+            </p>
+          </div>
+          <div class="text-right"><span class="glyphicon glyphicon-chevron-right"></span></div>
+          <div class="spacerHalf"></div>
+        </div>
+        </div>
+        <div class="spacer"></div>
+        <div class="row">
+        <div class="col-sm-12 col-md-10 blog_button">
+          <header>Etsy keytar stumptown Shoreditch ugh.</header>
+          <div class="spacerHalf"></div>
+          <div class="col-sm-4">
+            <img class="img-responsive" src="assets/blog2.jpg" alt="">
+          </div>
+          <div class="col-sm-8">
+            <p>
+              But generally it feels a little slapdash furthermore we would recommend this phone if you wanted this sort of thing on if you want an Android phone, this might just be your best bet, above all might be better, for example makes compromises but better than some but not as good as others in my opinion just about the best.
+            </p>
+          </div>
+          <div class="text-right"><span class="glyphicon glyphicon-chevron-right"></span></div>
+          <div class="spacerHalf"></div>
+        </div>
+        </div>
+        <div class="spacer"></div>
+        <div class="row">
+        <div class="col-sm-12 col-md-10 blog_button">
+          <header>Etsy keytar stumptown Shoreditch ugh.</header>
+          <div class="spacerHalf"></div>
+          <div class="col-sm-4">
+            <img class="img-responsive" src="assets/blog4.jpg" alt="">
+          </div>
+          <div class="col-sm-8">
+            <p>
+              But generally it feels a little slapdash furthermore we would recommend this phone if you wanted this sort of thing on if you want an Android phone, this might just be your best bet, above all might be better, for example makes compromises but better than some but not as good as others in my opinion just about the best.
+            </p>
+          </div>
+          <div class="text-right"><span class="glyphicon glyphicon-chevron-right"></span></div>
+          <div class="spacerHalf"></div>
+        </div>
+        </div>
+        
     </div>
 
 
