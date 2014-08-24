@@ -8,8 +8,11 @@
       Html
 *****************/
 html {margin:0;padding:0;}
+
 h2 {text-align: right;font-weight: bold;font-size: 3em;}
+
 p {padding-top: 1em;padding-bottom: 0.3em;}
+
 body{
   background: #e8fff9;
   background-image: url(../assets/tile.png);
@@ -18,6 +21,7 @@ body{
   font-weight: normal;
   margin: 0;
 }
+
 hr {
   outline-color: #189293;
   outline-width: 2px;
@@ -29,6 +33,7 @@ header {
 /*****************
       Styling
 *****************/
+
 .bold {
   font-weight: bold;
 }
@@ -39,33 +44,13 @@ header {
   margin-bottom: 0;
   padding-bottom: 0.8em;
   padding-top: 1em;
+ 
 }
-.drop-menu-active{
-  text-align: left;
-}
-.drop-menu1{
-  background-image: url(../assets/menu/booking.png);
-  margin-top:0.1em;
-  margin-bottom: 0.1em;
-}
-.drop-menu2{
-  background-image: url(../assets/menu/travelblog.png);
-  margin-bottom: 0.1em;
-}
-.drop-menu3{
-  background-image: url(../assets/menu/FF.png);
-  margin-bottom: 0.1em;
-}
-.drop-menu4{
-  background-image: url(../assets/menu/pledge.png);
-  margin-bottom: 0.1em;
-}
+
 /*****************
       Utility
 *****************/
-.row_fix{
-  margin:0 0 0 0;
-}
+
 .spacer{
   margin-top: 1.5em;
   padding-top:1.5em;
@@ -84,18 +69,11 @@ header {
 .large_text{
   font-size: 1.5em;
 }
-.testimony{
-  height: 20em;
-}
-.login-pic {
-  max-height: 6em;
-  max-width: 6em;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
+
 /*****************
     Unsorted
 *****************/
+
 .sm-menu{
   color:#fff;
   font-weight: normal;
@@ -104,29 +82,37 @@ header {
 }
 .md-menu{
   padding :2em;
+
 }
+
 .sm-menu-active{
   background-color: #b6f2f0;
   font-weight: normal;
   font-weight: bold;
   color:#189293;
-  height: 3.5em;
-  border-radius: 10px;
 }
+
+
 .vert-mid{
   vertical-align: middle;
   margin-top:-0.5em;
 }
+
+
 .drop-menu a {
   text-decoration: none;
   color: white;
 }
+
 .no_pad{
   padding-left: 0;
   padding-right: 0;
 }
 .margin_nobot {
   margin-bottom: 0;
+}
+.row_fix{
+  margin:0 0 0 0;
 }
 .mast-md{
   background-color: #189293;
@@ -155,6 +141,30 @@ header {
   font-weight: bold;
   font-size: 3em;
   color: #fff;
+  
+}
+.testimony{
+  height: 20em;
+}
+.drop-menu-active{
+  text-align: left;
+}
+.drop-menu1{
+  background-image: url(../assets/menu/booking.png);
+  margin-top:0.1em;
+  margin-bottom: 0.1em;
+}
+.drop-menu2{
+  background-image: url(../assets/menu/travelblog.png);
+  margin-bottom: 0.1em;
+}
+.drop-menu3{
+  background-image: url(../assets/menu/FF.png);
+  margin-bottom: 0.1em;
+}
+.drop-menu4{
+  background-image: url(../assets/menu/pledge.png);
+  margin-bottom: 0.1em;
 }
 .text-input{
   background-color: #b6f1ef;
@@ -166,17 +176,32 @@ header {
 .input_round{
   border-radius: 25px;
 }
+.flyer_points{
+  background-color: #189293;
+  height:15em;
+  text-align: center;
+
+}
+.flyer_points h4 {
+  color: #fff;
+  padding-top:3em;
+  font-size: 2em;
+  font-weight: bold;
+}
+
 .rewards_table {
   border: 1px solid #189293;
 }
 .rewards_even{
   background: #189293;
   color:#fff;
+   
 }
 
 .blog_thumb{
   font-size: 0.8em;
   padding-top: 1.5em;
+  
 }
 .blog_img{
   margin-top: 1.5em;
@@ -184,4 +209,5 @@ header {
 .blog_button {
   background-color: #b6f2f0;
   border-radius: 5px;
+
 }

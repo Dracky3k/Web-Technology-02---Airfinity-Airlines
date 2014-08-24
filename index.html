@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Airfinity Airlines</title>
-
+    <link rel="icon" href="assets/favicon.png">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
@@ -17,25 +17,25 @@
   </head>
   <body>
     <!-- Main header + Nav Toggle -->
-    <nav class="navbar" role="navigation">
+    <nav class="navbar margin_nobot" role="navigation">
       <div class="container-fluid no_pad">
       <!-- Menu for Desktop -->
-        <div class="mast-md navbar visible-lg visible-md">
-          <a class="logo logo-md navbar-brand" href="#"><img src="assets/logo.svg" alt="Airfinity Airlines" height="70px"  class="" role="logo" ></a>
-          <div class=" col-md-8 col-md-push-3 deco_none sm-menu">
-            <a href="booking.html"><div class="col-md-2"><p>Booking</p></div></a>
-            <a href="blog.html"><div class="col-md-2"><p>Travel Blog</p></div></a>
-            <a href="flyer.html"><div class="col-md-2"><p>Frequent Flyer</p></div></a>
-            <a href="pledge.html"><div class="col-md-2"><p>Our Pledge</p></div></a>
+        <div class="mast-md navbar row row-fix visible-lg visible-md">
+          <a class="logo col-md-4 " href="#"><img src="assets/logo.svg" class="logo-md" alt="Airfinity Airlines"></a>
+          <div class="row row-fix col-md-8 deco_none sm-menu md-menu">
+            <a href="booking.html" class="col-md-3"><div><p>Booking</p></div></a>
+            <a href="blog.html" class="col-md-3"><div><p>Travel Blog</p></div></a>
+            <a href="flyer.html" class="col-md-3"><div><p>Frequent Flyer</p></div></a>
+            <a href="pledge.html" class="col-md-3"><div><p>Our Pledge</p></div></a>
           </div>
         </div>
       <!--Menu for ipad -->
-        <div class="row visible-sm ">
+        <div class="row row_fix visible-sm">
           <div class="col-sm-5 col-sm-push-3">
-            <a class="logo logo-ipad navbar-brand" href="#"><img src="assets/logo-dark.svg" alt="Airfinity Airlines"  class="text-center" role="logo" ></a>
+            <a class="logo logo-ipad" href="#"><img src="assets/logo-dark.svg" alt="Airfinity Airlines"  class="text-center"></a>
           </div> 
         </div>
-        <div class="row col-sm-12 mast visible-sm">
+        <div class="row row_fix col-sm-12 mast visible-sm">
           <div class="col-sm-3">
             <a href="booking.html"><p class="sm-menu">Booking</p></a>
           </div>
@@ -52,44 +52,43 @@
       </div>
       <!-- Menu for Mobile -->
       <div class="navbar-header mast visible-xs">
-          <div class="row">
-            <a class="logo navbar-brand" href="#"><img src="assets/logo.svg" alt="Airfinity Airlines" role="logo" width="250px" height="50px" class="navbar-left col-xs-10 hidden-sm"></a>
-            <button type="button" class="navbar-toggle menu-glyph navbar-right col-xs-4" data-toggle="collapse" data-target="#main-menu">
-              <span class="glyphicon glyphicon-th-list menu"></span>
-            </button>
-
-          </div>
+        <div class="row row_fix">
+        <!-- Row adds up to 11 due to pushing error -->
+          <a class="col-xs-8" href="#"><img src="assets/logo.svg" alt="Airfinity Airlines" class="logo img-responsive hidden-sm"></a>
+          <button type="button" class="navbar-toggle menu-glyph navbar-right col-xs-3" data-toggle="collapse" data-target="#main-menu">
+            <span class="glyphicon glyphicon-th-list"></span>
+          </button>
         </div>
       </div>
-      
-       
-      
     </nav>
     <!-- Navigation Options -->
     <div class="collapse navbar-collapse" id="main-menu">
       <ul class="navbar-nav nav navbar-right drop-menu hidden-sm hidden-md hidden-lg">
         <li>
-          <div class="container-fluid">
-            <div id="carousel-index" class="carousel slide" data-ride="carousel">
+          <div class="container-fluid no_pad">
+            <div id="carousel-index" class="carousel slide " data-ride="carousel">
               <div class="carousel-inner">
+                <div class="item active">
+                  <img class="img-responsive" src="assets/slider/1.jpg" alt="slider1">
+                </div>
                 <div class="item">
-                  <img class="img-responsive" width="100%" src="assets/slider/4.jpg" alt="slider1">
-                <div class="carousel-caption">
+                  <img class="img-responsive" src="assets/slider/2.jpg" alt="slider2">
+                </div>  
+                <div class="item">
+                  <img class="img-responsive" src="assets/slider/3.jpg" alt="slider3">
                 </div>
-              </div>
-              <div class="item">
-                <img class="img-responsive" width="100%" src="assets/slider/5.jpg" alt="slider2">
-                <div class="carousel-caption">
+                <div class="item">
+                  <img class="img-responsive" src="assets/slider/4.jpg" alt="slider4">
                 </div>
-              </div>  
-              <div class="item active">
-                <img class="img-responsive" width="100%" src="assets/slider/6.jpg" alt="slider3">
-                <div class="carousel-caption">
+                <div class="item">
+                  <img class="img-responsive" src="assets/slider/5.jpg" alt="slider5">
+                </div>
+                <div class="item">
+                  <img class="img-responsive" src="assets/slider/6.jpg" alt="slider6">
                 </div>
               </div>
             </div>
           </div>
-
         </li>
         <li class=""><div class="drop-menu1"><a href="booking.html">Booking</a></div></li>
         <li class=""><div class="drop-menu2"><a href="blog.html">Travel Blog</a></div></li>
@@ -97,30 +96,33 @@
         <li class=""><div class="drop-menu4"><a href="pledge.html">Our Pledge</a></div></li>
       </ul>
     </div>
-    <!-- Testing Text -->
-    <h1 class="text-center"><span class="bold">Welcome to Airfinity Airlines</span></h1>
     <!-- Slider -->
-    <!-- 
-    <div class="container-fluid">
-      <div id="carousel-index" class="carousel slide" data-ride="carousel">
+    <div class="container-fluid ">
+      <div id="carousel-index" class="carousel slide col-xs-12" data-ride="carousel">
         <div class="carousel-inner">
           <div class="item active">
             <img class="img-responsive" src="assets/slider/1.jpg" alt="slider1">
-          <div class="carousel-caption">
+          </div>
+          <div class="item">
+            <img class="img-responsive" src="assets/slider/2.jpg" alt="slider2">
+          </div>
+          <div class="item">
+            <img class="img-responsive" src="assets/slider/3.jpg" alt="slider3">
+          </div>
+          <div class="item">
+            <img class="img-responsive" src="assets/slider/4.jpg" alt="slider4">
+          </div>
+          <div class="item">
+            <img class="img-responsive" src="assets/slider/5.jpg" alt="slider5">
+          </div>
+          <div class="item">
+            <img class="img-responsive" src="assets/slider/6.jpg" alt="slider6">
           </div>
         </div>
-        <div class="item">
-          <img class="img-responsive" src="assets/slider/2.jpg" alt="slider2">
-          <div class="carousel-caption">
-          </div>
-        </div>
-        <div class="item">
-          <img class="img-responsive" src="assets/slider/3.jpg" alt="slider3">
-          <div class="carousel-caption">
-          </div>
-        </div>
-      </div> 
-      -->
+      </div>
+    </div>
+      <!-- Header -->
+      <h1 class="text-center"><span class="bold">Welcome to Airfinity Airlines</span></h1> 
       <!-- Index Content | forms -->
       <div class="container">
         <div class="row">
@@ -132,19 +134,20 @@
               <div class="form-group">
                 <input type="string" class="form-control text-input" id="index-destination" placeholder="Destination City">
               </div>
-              <button type="button" class="col-xs-12 text-input btn btn-success"><span class="glyphicon glyphicon-chevron-right"></span></button>
+              <button type="button" class="col-xs-8 col-xs-offset-2 input_round btn btn-success"><span class="glyphicon glyphicon-chevron-right"></span></button>
             </form>
           </div>
         </div>
         <div class="spacer"></div>
         <!-- Social Media testimony thing -->
         <div class="container-fluid">
-          <div id="carousel-index" class="carousel slide" data-ride="carousel">
+          <div id="carousel-testimony" class="carousel slide" data-ride="carousel">
             <div class="testimony carousel-inner">
+    <!-- Start Testimony -->
               <div class="item active">
                 <div class="row">
                   <div class="col-xs-4">
-                    <img src="assets/soc_m.jpg" class="img-responsive img-thumbnail" alt="Mister Fly">
+                    <img src="assets/users/flyguy.jpg" class="img-responsive img-thumbnail" alt="Mister Fly">
                   </div>
                   <div class="col-xs-8">
                     <blockquote class="blockquote-reverse">
@@ -154,10 +157,11 @@
                   </div>
                 </div>
               </div>
+    <!-- End Testimony -->
               <div class="item">
                 <div class="row">
                   <div class="col-xs-4">
-                    <img src="assets/soc_d.gif" class="img-responsive img-thumbnail" alt="Master Doge">
+                    <img src="assets/users/doge.gif" class="img-responsive img-thumbnail" alt="Master Doge">
                   </div>
                   <div class="col-xs-8">
                     <blockquote class="blockquote-reverse">
@@ -166,12 +170,52 @@
                     </blockquote>
                   </div>
                 </div>
-                <div class="spacer"></div>
+              </div>
+                <div class="item">
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <img src="assets/users/racoon.gif" class="img-responsive img-thumbnail" alt="Racoon-san">
+                    </div>
+                    <div class="col-xs-8">
+                      <blockquote class="blockquote-reverse">
+                        <p>I Would much rather fly Airfinity</p>
+                        <footer><cite title="Source Title">Red Handed Racoon</cite></footer>
+                      </blockquote>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <img src="assets/users/dude.gif" class="img-responsive img-thumbnail" alt="Dude What?">
+                    </div>
+                    <div class="col-xs-8">
+                      <blockquote class="blockquote-reverse">
+                        <p>Its like the best thing ever and the food is great!</p>
+                        <footer><cite title="Source Title">Dude What?</cite></footer>
+                      </blockquote>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <img src="assets/users/stacks.gif" class="img-responsive img-thumbnail" alt="Fat Stacks">
+                    </div>
+                    <div class="col-xs-8">
+                      <blockquote class="blockquote-reverse">
+                        <p>They are so affordable that I still have this much to spend, thanks Airfinity</p>
+                        <footer><cite title="Source Title">Uncle Moneybags</cite></footer>
+                      </blockquote>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div> 
-        
-      </div>
+        </div>
+        <div class="spacer"></div>  
+
 
 
     <script src="js/jquery-1.11.1.min.js"></script>
